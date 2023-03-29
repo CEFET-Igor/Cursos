@@ -1,0 +1,31 @@
+@charset 'UTF-8';
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    height: 99vh;
+    margin: 1px;
+    box-shadow: inset 1px 1px 1px 1px black;
+    background-color: aqua;
+}
+h1{
+    text-align: center;
+    padding: 15px;
+}
+main{
+    max-width: 800px;
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+}
+table{
+    margin: auto;
+    border-collapse: collapse;
+    min-width: 300px;
+}
+td, th {
+    border: 1px solid black;
+    padding: 5px;
+}

@@ -1,0 +1,62 @@
+@charset 'UTF-8';
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    height: 99vh;
+    margin: 1px;
+    box-shadow: inset 1px 1px 1px 1px black;
+    background-color: aqua;
+}
+
+main{
+    max-width: 800px;
+    background-color: white;
+    margin: auto;
+    padding: 15px;
+}
+
+table{
+    margin: auto;
+    border-collapse: collapse;
+    min-width: 300px;
+    max-width: 600px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td, th {
+    border: 1px solid black;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+col.carea{
+    background-color: rgba(0, 0, 0, 0.233);
+}
+col.cdisciplina{
+    background-color: rgba(255, 0, 0, 0.226);
+}
+col.cnotas{
+    background-color: rgba(0, 0, 255, 0.425);
+}
+col.cmedias{
+    background-color: rgba(0, 128, 0, 0.342);
+}
+col.teste{
+    background-color: black;
+}
+/*
+thead, tr.destaque{
+    background-color: rgba(128, 128, 128, 0.774);
+    color: white;
+    text-decoration: none;
+}
+
+tr.destaque > th{
+    text-align: left;
+    font-weight: bold;
+}
+*/

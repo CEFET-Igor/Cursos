@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com tabelas grandes</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>Trabalhando com tabelas grandes</h1>
+    </header>
+    <!--
+        Hierarquia de Tabelas Grandes
+
+        table
+            capition -> legenda
+            thead
+                tr - td - th(scope)
+            tbody
+                tr - td - th(scope)
+            tfooter
+                tr - td - th(scope)
+    -->
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="estado">São Paulo</td>
+                    <td class="num">46 024 937</td>
+                </tr>
+                <tr>
+                    <td class="estado">Minas Gerais</td>
+                    <td class="num">20 732 660</td>
+                </tr>
+                <tr>
+                    <td class="estado">Rio de Janeiro</td>
+                    <td class="num">16 615 526</td>
+                </tr>
+                <tr>
+                    <td class="estado">São Paulo</td>
+                    <td class="num">46 024 937</td>
+                </tr>
+                <tr>
+                    <td class="estado">Minas Gerais</td>
+                    <td class="num">20 732 660</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Rio de Janeiro</td>
+                    <td class="num">16 615 526</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Bahia Bahia</td>
+                    <td class="num">14 659 023</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Paraná</td>
+                    <td class="num">11 835 379</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Rio Grande do Sul</td>
+                    <td class="num">11 088 065</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Pernambuco</td>
+                    <td class="num">9 051 113</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Ceará</td>
+                    <td class="num">8 936 431</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Pará</td>
+                    <td class="num">8 442 962</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Santa Catarina</td>
+                    <td class="num">7 762 154</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Goiás</td>
+                    <td class="num">6 950 976</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Maranhão</td>
+                    <td class="num">6 800 605</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Espírito Santo</td>
+                    <td class="num">4 108 508</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Paraíba</td>
+                    <td class="num">4 030 961</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Amazonas</td>
+                    <td class="num">3 952 262</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Mato Grosso</td>
+                    <td class="num">3 784 239</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Rio Grande do Norte</td>
+                    <td class="num">3 303 953</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Piauí</td>
+                    <td class="num">3 270 174</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Alagoas</td>
+                    <td class="num">3 125 254</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Distrito Federal</td>
+                    <td class="num">2 923 369</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Mato Grosso do Sul</td>
+                    <td class="num">2 833 742</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Sergipe</td>
+                    <td class="num">2 211 868	</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Rondônia</td>
+                    <td class="num">1 616 379</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Tocantins</td>
+                    <td class="num">1 584 306</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Acre</td>
+                    <td class="num">829 780	</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Amapá</td>
+                    <td class="num">774 268</td>
+                    
+                </tr>
+                <tr>
+                    <td class="estado">Roraima</td>
+                    <td class="num">634 805	</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th scope="row">Total</th>
+                <td>210.147.125</td>
+            </tfoot>
+        </table>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio deleniti tempore facilis nihil! Neque voluptatibus ratione possimus itaque. Architecto sunt deleniti, eligendi nihil doloribus accusamus reiciendis id praesentium Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quia repudiandae. Quisquam incidunt voluptatibus, temporibus consequatur quis obcaecati eveniet enim qui mollitia suscipit magnam! Quod deserunt neque sint! Possimus, minus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio deleniti tempore facilis nihil! Neque voluptatibus ratione possimus itaque. Architecto sunt deleniti, eligendi nihil doloribus accusamus reiciendis id praesentium Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quia repudiandae. Quisquam incidunt voluptatibus, temporibus consequatur quis obcaecati eveniet enim qui mollitia suscipit magnam! Quod deserunt neque sint! Possimus, minus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio deleniti tempore facilis nihil! Neque voluptatibus ratione possimus itaque. Architecto sunt deleniti, eligendi nihil doloribus accusamus reiciendis id praesentium Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quia repudiandae. Quisquam incidunt voluptatibus, temporibus consequatur quis obcaecati eveniet enim qui mollitia suscipit magnam! Quod deserunt neque sint! Possimus, minus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio deleniti tempore facilis nihil! Neque voluptatibus ratione possimus itaque. Architecto sunt deleniti, eligendi nihil doloribus accusamus reiciendis id praesentium Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quia repudiandae. Quisquam incidunt voluptatibus, temporibus consequatur quis obcaecati eveniet enim qui mollitia suscipit magnam! Quod deserunt neque sint! Possimus, minus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio deleniti tempore facilis nihil! Neque voluptatibus ratione possimus itaque. Architecto sunt deleniti, eligendi nihil doloribus accusamus reiciendis id praesentium Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quia repudiandae. Quisquam incidunt voluptatibus, temporibus consequatur quis obcaecati eveniet enim qui mollitia suscipit magnam! Quod deserunt neque sint! Possimus, minus.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio deleniti tempore facilis nihil! Neque voluptatibus ratione possimus itaque. Architecto sunt deleniti, eligendi nihil doloribus accusamus reiciendis id praesentium Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, quia repudiandae. Quisquam incidunt voluptatibus, temporibus consequatur quis obcaecati eveniet enim qui mollitia suscipit magnam! Quod deserunt neque sint! Possimus, minus.
+        </p>
+    </main>
+</body>
+</html>

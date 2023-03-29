@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Analizador de números</title>
+</head>
+<body >
+    <header>
+
+        <h1> Analizador de números </h1>
+
+    </header>
+
+    <section>
+        <div id="addNumber" class="addNumber">
+            Selecione seus números (entre 1 e 100):
+            <input type="number" name="number" id="number" placeholder="0-100" min="1" max="100">
+            <input type="button" value="Adicionar" onclick="addNumber()">
+
+        </div>
+        <div id="seeNumbers" class="seeNumbers">
+            <p><select name="select" id="select" size="5" class="select"></select></p>
+            <p><input type="button" class="finalizar" value="finalizar" onclick="seeDetail()"></p>
+        </div>
+        
+        <div id="detail" class="detail">
+            Aqui vão aparecer as informaçoes do array
+        </div>
+
+    </section>
+
+    <footer>
+        <p>@igorguimaraescampos</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

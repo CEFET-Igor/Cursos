@@ -1,0 +1,49 @@
+body{
+    background: rgb(109, 109, 167);
+    font: normal 15 pt Arial;
+}
+
+header{
+    text-align: center;
+}
+
+section{
+    background: white;
+    border-radius: 30px;
+    padding: 15px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 5px 5px 10px black;
+}
+div{
+    text-align: center;
+    padding: 3px;
+}
+
+footer{
+    text-align: center;
+    font-style: italic;
+}
+p{
+    padding: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.birth-date{
+    background-color: rgba(0, 0, 255, 0.781);
+    border-radius: 15px;
+    width: 120px;
+    padding-left: 20px;
+    font-size: 14px;
+    box-shadow: 3px 3px 5px black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+::-webkit-calendar-picker-indicator{
+    background-color: rgba(3, 3, 109, 0.384);
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 5px;
+}

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap'); 
+/* 
+    -> IMport font HandWrite
+    -> font-family: 'Kalam', cursive; 
+*/
+
+body{
+    background: rgb(95,15,212);
+    background: linear-gradient(90deg, rgba(95,15,212,1) 0%, rgba(24,48,199,1) 50%, rgba(15,145,212,1) 100%);
+}
+
+h1{
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    font-size: 3.25em;
+}
+
+h2{
+    font-family: 'Kalam', cursive;
+    font-size: 3em;
+    text-align: center;
+}
+
+p{
+    font-family: 'Kalam', cursive;
+    text-align: justify;
+    font-size: 1.25em;
+}
+
+.content{
+    background-color: rgba(255, 255, 255, 0.30);
+    max-width: 500px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    font-family: monospace;
+
+}

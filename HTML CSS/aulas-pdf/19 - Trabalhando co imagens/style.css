@@ -1,0 +1,20 @@
+body{
+    background: url('../Imagens/wallpaper002.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.quadrado{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    display: inline-flex;
+}
+#a{
+    background: yellow;
+}
+#b{
+    background-image: linear-gradient(blue, green);
+}
+#c{
+    background: url('../Imagens/pattern001.png');
+}
