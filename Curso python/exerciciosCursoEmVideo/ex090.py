@@ -6,10 +6,13 @@ if 0 <= ficha['media'] < 6:
     ficha['situação'] = 'Reprovado'
 elif 6 <= ficha['media'] <= 10:
     ficha['situação'] = 'Aprovado'
+elif ficha['media'] > 10:
+    ficha['situação'] = 'Nota maior que 10'
 else:
-    ficha['situação'] = 'Indefinida'
+    ficha['situação'] = 'Nota menor que 0'
+    
 print(f"""
 Nome:     {ficha['nome'].capitalize()}
 Media:    {ficha['media']:.2f}
-situação: {ficha['situação']}
+Situação: {ficha['situação']}
 """)
