@@ -1,6 +1,12 @@
 from time import sleep
 
 def maior(*nums):
+    """
+    printa quantos números foram receidos, e o maior valor entre eles.
+
+    :param nums: valores a serem comparados
+    :return: sem retorno
+    """
     
     if len(nums) == 0:
         print('Não foram informados valores.')

@@ -1,5 +1,12 @@
 from time import sleep
 def contagem(inicio, fim, passo):
+    """
+    -> Faz uma contagem e mostra na tela.
+    :param inicio: início da contagem
+    :param fim: fim da contagem
+    :param passo: passo da contagem
+    :return: sem retorno
+    """
     if passo == 0:
         print('\033[31mPasso inválido!\033[m Considerando passo = 1')
         sleep(1)
