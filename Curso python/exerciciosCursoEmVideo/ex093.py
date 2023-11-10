@@ -4,7 +4,7 @@ jogador['Nome'] = str(input('Digite o nome do jogador: ')).capitalize().strip()
 p = int(input(f'Quantas partidas {jogador["Nome"]} jogou: '))
 for cont in range(0,p):
     partidas.append(int(input(f'Quantos gols {jogador["Nome"]} fez na partida {cont+1}: ')))
-jogador['gols'] = partidas
+jogador['gols'] = partidas.copy()
 jogador['Saldo de gols'] = sum(partidas)
 print('='*60)
 print(jogador)
