@@ -1,9 +1,9 @@
-def EscrevaMsg(texto):
-    print('~' * (len(texto) + 4))
+def escreveMsg(texto):
+    print('-' * (len(texto) + 4))
     print(f'  {texto}  ')
-    print('~' * (len(texto) + 4))
+    print('-' * (len(texto) + 4))
 
-EscrevaMsg('Hello, World!')
-EscrevaMsg('Curso de Python no YouTube')
-EscrevaMsg('oi')
+escreveMsg('Hello, World!')
+escreveMsg('Curso de Python no YouTube')
+escreveMsg('oi')
 
