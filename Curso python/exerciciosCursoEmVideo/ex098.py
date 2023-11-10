@@ -5,24 +5,28 @@ def contagem(inicio, fim, passo):
         sleep(1)
         passo = 1
     
-    print(f'Contagem de {inicio} até {fim} de {passo} em {passo}')
+    print(f'Contagem de {inicio} até {fim} de {passo} em {passo} (passo = {passo}))')
 
     if passo < 0:
         passo *= -1
 
     if inicio < fim:#crecente
         for i in range(inicio, fim + 1, passo):
-            print(i, end=' ')
+            print(i, end=' ', flush=True)
+            sleep(0.5)
     else:#decrecente
         for i in range(inicio, fim - 1, -passo):
-            print(i, end=' ')
+            print(i, end=' ', flush=True)
+            sleep(0.5)
     print('FIM!')
+    print('-=' * 20)
+    sleep(1)
+    print()
 
 
 contagem(1, 10, 1)
-print('-=' * 20)
 contagem(10, 0, 2)
-print('-=' * 20)  
+
 print('Agora é sua vez de personalizar a contagem!')
 inicio = int(input('Início: '))
 fim = int(input('Fim: '))
