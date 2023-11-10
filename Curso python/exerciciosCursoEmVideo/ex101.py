@@ -2,14 +2,13 @@ from datetime import date
 def voto(ano):
     """
     -> Retorna se o voto é obrigatório, opcional ou não permitido de acordo com a idade.
-
     Args:
         :param ano (int): O ano de nascimento da pessoa.
-
     Returns:
         str: Uma mensagem indicando se o voto é obrigatório, opcional ou não permitido.
         int: A idade da pessoa.
     """
+    
     idade = date.today().year - ano
     if idade < 16:
         return 'Não pode votar', idade
