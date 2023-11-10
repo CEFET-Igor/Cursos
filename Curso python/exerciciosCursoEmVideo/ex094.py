@@ -3,16 +3,19 @@ pessoas = []
 mulheres = []
 idades = 0
 while True:
+    pessoa.clear()
     pessoa['Nome'] = str(input('Nome: '))
     while True:
         pessoa['Sexo'] = str(input('Sexo: [M/F]')).strip().upper()[0]
         if pessoa['Sexo'] in 'FM':
             break
         print('\033[31mOpção Invalida.\033[m')
+    if pessoa['Sexo'] == 'F':
+        mulheres.append(pessoa['Nome'].capitalize())
+    
     pessoa['Idade'] = int(input('Idade: '))
     idades += pessoa['Idade']
-    if pessoa['Sexo'] == 'F':
-        mulheres.append(pessoa.copy())
+    
     pessoas.append(pessoa.copy())
 
     while True:
@@ -25,21 +28,19 @@ while True:
 
 print(f"""
 {'='*60}
-No final foram adicionados {len(pessoas)} pessoas,
-com uma media de idade de {idades/len(pessoas):.2f}
-As mulheres adicionadas são:
-""")
+A) Foram adicionadas {len(pessoas)} pessoas;
+B) A media de idade é de {idades/len(pessoas):.2f};""")
 
-for m in mulheres:
-    for key, val in m.items():
-        print(f"{key:.<6}: {val}")
-    print()
+if len(mulheres) == 0:
+    print('C) Não foi adicionado nenhuma mulherer.')
+else:
+    print(f"C) As mulheres cadastradas foram: {mulheres}")
 
-print('As pessoas acima da media de idade são: ')
+print('D) As pessoas acima da media de idade são: ')
 for p in pessoas:
-    if p['Idade'] > idades/len(pessoas):
+    if p['Idade'] >= idades/len(pessoas):
         print(f"""
-    Nome  : {p['Nome']}
+    Nome  : {p['Nome'].capitalize()}
     Sexo  : {p['Sexo']}
     Idade : {p['Idade']}
         """)
