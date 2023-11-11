@@ -1,5 +1,5 @@
 style = {
-    "none":'\033m',
+    "none":'\033[m',
     "bold": '\033[1m',
     "underline": '\033[4m',
     "negative": '\033[7m',
